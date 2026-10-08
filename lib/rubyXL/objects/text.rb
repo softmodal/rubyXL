@@ -85,7 +85,7 @@ module RubyXL
     define_element_name 'is'
 
     def to_s
-      str = t.to_s
+      str = t.to_s.dup
       r && r.each { |rtr| str << rtr.to_s if rtr }
       str
     end
